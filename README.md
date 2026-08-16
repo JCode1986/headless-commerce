@@ -20,6 +20,20 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Shopify Setup
+
+Shopify is the commerce backend for this storefront. Local Shopify credentials belong in `.env.local`, which is ignored by Git.
+
+Copy `.env.example` to `.env.local` and provide:
+
+```env
+SHOPIFY_STORE_DOMAIN=
+SHOPIFY_STOREFRONT_ACCESS_TOKEN=
+SHOPIFY_API_VERSION=
+```
+
+Never commit real Shopify credentials or expose them through `NEXT_PUBLIC_` variables.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
